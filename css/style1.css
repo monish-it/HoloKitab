@@ -11,7 +11,14 @@ div {
 html {
   transition: all 0.3ms ease;
   scroll-behavior: smooth;
+  /* cursor: url("https://img.icons8.com/fluent/48/000000/cursor--v2.png"), auto; */
+  cursor: url("../res/cursor/normal.png"), auto;
 }
+
+/* -------------------------------------------------------
+Cursor
+------------------------------------------------------- */
+
 /* -------------------------------------------------------
 Nav-Bar
 ------------------------------------------------------- */
@@ -112,7 +119,12 @@ Image Slider
   stroke-width: 1200;
   stroke-miterlimit: 10;
   stroke-opacity: 0.3;
+  display: none;
 }
+/* .jssorb031 .i:hover {
+  cursor: url("../res/cursor/normal.png"), auto;
+} */
+
 .jssorb031 .i:hover .b {
   fill: #fff;
   fill-opacity: 0.7;
@@ -131,6 +143,9 @@ Image Slider
   display: block;
   position: absolute;
   cursor: pointer;
+}
+.jssora051:hover {
+  cursor: url("../res/cursor/normal.png"), auto;
 }
 .jssora051 .a {
   fill: none;
@@ -210,6 +225,10 @@ Buy
   transition: all 0.5s;
   margin-top: 20px;
 }
+.buynow .buy-card .buy-button p:hover {
+  cursor: url("../res/cursor/normal.png"), auto;
+}
+
 .buynow .buy-card .buy-button .buynow-button {
   background: #00f009;
 }
@@ -233,7 +252,7 @@ Buy
   background: #ff4fa5;
 }
 .buynow .buy-card .buy-button .learnmore-button:before {
-  background: #ff745c;
+  background: #ff4fa5;
 }
 .buynow .buy-card .buy-button p:hover {
   color: white;
