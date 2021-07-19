@@ -455,6 +455,7 @@ Gallery
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .main .card {
   color: #252a32;
@@ -477,14 +478,6 @@ Gallery
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-@media only screen and (max-width: 600px) {
-  .main .gallery-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
 }
 
 /* -----------------------------------------------------
@@ -575,10 +568,21 @@ Responsive
   .about-us p {
     font-size: 25px;
   }
-  .feature-title {
+  .features .feature-title {
+    font-size: 60px;
+  }
+  .gallery .gallery-title {
     font-size: 60px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .main .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   .grid-flex {
     padding: 0 0;
@@ -605,10 +609,13 @@ Responsive
   .about-us h1 {
     font-size: 50px;
   }
-  .feature-title {
-    font-size: 60px;
+  .features .feature-title {
+    font-size: 50px;
   }
   .about-us p {
     font-size: 20px;
+  }
+  .gallery .gallery-title {
+    font-size: 50px;
   }
 }
