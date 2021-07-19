@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolooKitab</title>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------
+  CSS
+  --------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="./css/style1.css">
+  <link rel="stylesheet" href="./css/g-fonts.css">
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------
+  jQuery
+  --------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <script src="./jquery/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.1.0/jssor.slider.min.js"></script> -->
+  <script src="./jquery/jquery.js"></script>
+  <script src="./jquery/jssor.slider.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------
+  Nav-Bar
+  --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="./res/logo/logo.png"> HoloKitab</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">How To Scan?</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Policies</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+  
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------
+Auto-Slider
+  --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+  <section class="wow fadeIn example no-padding no-transition slider-top" style="padding-top: 70px;">
+    <div style="min-height: 50px;">
+      <!-- Jssor Slider Begin -->
+  
+      <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+          top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+          <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://www.jssor.com/theme/svg/loading/static-svg/spin.svg" />
+        </div>
+  
+        <!-- Slides Container -->
+        <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+          <div>
+            <img data-u="image" src="./res/slider/img-1.jpg" class="slider" />
+          </div>
+          <div>
+            <img data-u="image" src="./res/slider/img-2.jpeg" class="slider" />
+          </div>
+          <div>
+            <img data-u="image" src="./res/slider/img-3.jpeg" class="slider" />
+          </div>
+        </div>
+  
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: https://www.jssor.com/development/slider-with-bullet-navigator.html -->
+        <style>
+  
+        </style>
+        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+          <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg>
+          </div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+  
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+        <style>
+  
+        </style>
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+          <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+          </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+          <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+          </svg>
+        </div>
+        <!--#endregion Arrow Navigator Skin End -->
+      </div>
+      <!-- Jssor Slider End -->
+    </div>
+  </section>
+  
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------
+  JS
+  --------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
