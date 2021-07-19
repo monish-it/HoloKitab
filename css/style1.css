@@ -149,73 +149,93 @@ Image Slider
   pointer-events: none;
 }
 /* -------------------------------------------------------
-Buy-me
+Buy
 ------------------------------------------------------- */
-.buy {
-  background: #edf2f4;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+.buynow {
+  min-height: 80vh;
   display: flex;
-  height: 100vh;
-  font-family: "Playfair Display", georgia, serif;
-}
-
-.card {
-  pointer-events: none;
-  transform: translateZ(0);
-  padding: 30px;
-  background: white;
-  border-radius: 5px;
-  width: 400px;
-  height: 200px;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  /* perspective: 1000px; */
+  transform: 1000px;
   transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
-.card:after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  border-radius: 50%;
-  left: 0;
-  bottom: -50px;
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
-}
-.card .card-content {
-  margin: auto;
+.buy-card {
+  widows: 220px;
   text-align: center;
+  background: transparent;
+  padding: 30px 0;
+  border-radius: 5px;
+  /* margin-top: 150px; */
+  /* box-shadow: 0px 20px 40px crimson; */
   transform-style: preserve-3d;
 }
-.card h1 {
-  transform: translateZ(100px);
+.buynow .buy-card img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 3px dotted;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
 }
-.card p {
-  transform: translateZ(50px);
-  display: block;
+.buynow .buy-card h1 {
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
 }
-.card p.related {
-  transform: translateZ(80px);
-  font-style: italic;
+.buynow .buy-card p {
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  font-family: "Overpass", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
-.card a {
-  color: #69c6b8;
-  pointer-events: auto;
+.buynow .buy-card .buy-button p {
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 24px;
+  font-family: "Signika", sans-serif;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+.buynow .buy-card .buy-button .buynow-button {
+  background: #00f009;
+}
+.buynow .buy-card .buy-button .learnmore-button {
+  background: #4382e0;
 }
 
-.iklan {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background: white;
-  width: 200px;
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+.buynow .buy-card .buy-button p:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  background: blue;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.buynow .buy-card .buy-button .buynow-button:before {
+  background: #ff4fa5;
+}
+.buynow .buy-card .buy-button .learnmore-button:before {
+  background: #ff745c;
+}
+.buynow .buy-card .buy-button p:hover {
+  color: white;
+}
+.buynow .buy-card .buy-button p:hover:before {
+  top: 0;
+  left: 0;
 }
 
 /* -----------------------------------------------------
