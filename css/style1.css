@@ -179,11 +179,12 @@ Buy
 .buy-card {
   widows: 220px;
   text-align: center;
-  background: rgb(205, 224, 247);
+  /* background: rgb(205, 224, 247); */
+  background: #7fe2ff;
   padding: 30px 0;
   border-radius: 5px;
   /* margin-top: 150px; */
-  /* box-shadow: 0px 20px 40px crimson; */
+  box-shadow: 0px 20px 30px #7fe2ff;
   transform-style: preserve-3d;
 }
 /* .buy-card:hover {
@@ -262,6 +263,90 @@ Buy
   left: 0;
 }
 /* -----------------------------------------------------
+About card
+----------------------------------------------------- */
+.aboutcards {
+  /* background-color: rgb(232, 237, 255); */
+  display: flex;
+  /* min-height: 90vh; */
+  /* width: 3060px; */
+  /* vertical-align: middle; */
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .card {
+  border-radius: 10px;
+
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 50px 30px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover {
+  height: 420px;
+}
+.container .card .imgbx {
+  position: relative;
+  max-width: 260px;
+  height: 260px;
+  top: -100px;
+  left: 20px;
+  z-index: 1;
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); */
+}
+.container .card .imgbx h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: rgb(86, 86, 219);
+  font-weight: bold;
+}
+/* .container .card .imgbx p {
+  opacity: 0;
+} */
+.container .card .imgbx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.container .card .content h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  color: rgb(105, 168, 2);
+}
+.container .card .content p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+/* -----------------------------------------------------
 Reveal on scroll
 ----------------------------------------------------- */
 .reveal {
@@ -293,6 +378,9 @@ Responsive
   .navbar .nav-logo img {
     width: 20px;
   }
+  /* .container .card .imgbx p {
+    opacity: 1;
+  } */
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
