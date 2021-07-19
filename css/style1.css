@@ -242,6 +242,9 @@ Buy
   top: 0;
   left: 0;
 }
+/* -----------------------------------------------------
+Reveal on scroll
+----------------------------------------------------- */
 .reveal {
   position: relative;
   transform: translateY(150px);
