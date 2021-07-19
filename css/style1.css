@@ -148,6 +148,75 @@ Image Slider
   opacity: 0.3;
   pointer-events: none;
 }
+/* -------------------------------------------------------
+Buy-me
+------------------------------------------------------- */
+.buy {
+  background: #edf2f4;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: flex;
+  height: 100vh;
+  font-family: "Playfair Display", georgia, serif;
+}
+
+.card {
+  pointer-events: none;
+  transform: translateZ(0);
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.card:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+}
+.card .card-content {
+  margin: auto;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+.card h1 {
+  transform: translateZ(100px);
+}
+.card p {
+  transform: translateZ(50px);
+  display: block;
+}
+.card p.related {
+  transform: translateZ(80px);
+  font-style: italic;
+}
+.card a {
+  color: #69c6b8;
+  pointer-events: auto;
+}
+
+.iklan {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 200px;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
 
 /* -----------------------------------------------------
 Responsive
