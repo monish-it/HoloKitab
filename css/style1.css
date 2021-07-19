@@ -156,7 +156,7 @@ Buy
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: rgb(155, 245, 133); */
+  /* background: rgb(233, 229, 229); */
   perspective: 1000px;
   transform: 1000px;
   transform-style: preserve-3d;
@@ -164,13 +164,17 @@ Buy
 .buy-card {
   widows: 220px;
   text-align: center;
-  background: rgb(173, 226, 229);
+  background: rgb(205, 224, 247);
   padding: 30px 0;
   border-radius: 5px;
   /* margin-top: 150px; */
   /* box-shadow: 0px 20px 40px crimson; */
   transform-style: preserve-3d;
 }
+/* .buy-card:hover {
+  background: #195190FF;
+} */
+
 .buynow .buy-card img {
   width: 115px;
   height: 115px;
@@ -183,6 +187,7 @@ Buy
   transform-style: preserve-3d;
   transform: translateZ(40px);
   font-family: "Ubuntu", sans-serif;
+  /* color: #ffa500; */
   font-size: 35px;
 }
 .buynow .buy-card p {
