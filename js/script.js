@@ -154,7 +154,12 @@ window.addEventListener('scroll', reveal);
     }
 
     // ----------------------------------------------------------------------------------------------
-// Feature
+// Gallery
 // ----------------------------------------------------------------------------------------------
+$('[data-fancybox="gallery"]').fancybox({
+  buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "share", "close"],
+  loop: false,
+  protect: true
+});
 
 
