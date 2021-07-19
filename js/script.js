@@ -131,5 +131,5 @@ jQuery(document).ready(function ($) {
 VanillaTilt.init(document.querySelector(".buy-card"),{
   max: 20,
   speed: 400,
-  // glare: true,
+  glare: true,
 })

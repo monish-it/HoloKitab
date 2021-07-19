@@ -156,15 +156,15 @@ Buy
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 255, 255);
-  /* perspective: 1000px; */
+  /* background: rgb(155, 245, 133); */
+  perspective: 1000px;
   transform: 1000px;
   transform-style: preserve-3d;
 }
 .buy-card {
   widows: 220px;
   text-align: center;
-  background: transparent;
+  background: rgb(173, 226, 229);
   padding: 30px 0;
   border-radius: 5px;
   /* margin-top: 150px; */
@@ -241,6 +241,22 @@ Buy
 /* -----------------------------------------------------
 Responsive
 ----------------------------------------------------- */
+@media (max-width: 1200px) {
+  .nav-logo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 950px) {
+  .nav-logo {
+    font-size: 25px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .navbar .nav-logo img {
+    width: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -277,5 +293,14 @@ Responsive
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .buynow .buy-card h1 {
+    font-size: 30px;
+  }
+  .buynow .buy-card p {
+    font-size: 15px;
+  }
+  .buynow .buy-card .buy-button p {
+    font-size: 19px;
   }
 }
