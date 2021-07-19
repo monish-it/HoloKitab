@@ -272,7 +272,7 @@ About card
   /* vertical-align: middle; */
 }
 
-.container {
+.about-container {
   justify-content: center;
   align-items: center;
   position: relative;
@@ -281,7 +281,7 @@ About card
   flex-wrap: wrap;
   padding: 30px;
 }
-.container .card {
+.about-container .card {
   border-radius: 10px;
 
   position: relative;
@@ -295,10 +295,10 @@ About card
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
-.container .card:hover {
+.about-container .card:hover {
   height: 420px;
 }
-.container .card .imgbx {
+.about-container .card .imgbx {
   position: relative;
   max-width: 260px;
   height: 260px;
@@ -307,7 +307,7 @@ About card
   z-index: 1;
   /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); */
 }
-.container .card .imgbx h2 {
+.about-container .card .imgbx h2 {
   font-family: "Lato", sans-serif;
   text-align: center;
   color: rgb(86, 86, 219);
@@ -316,11 +316,11 @@ About card
 /* .container .card .imgbx p {
   opacity: 0;
 } */
-.container .card .imgbx img {
+.about-container .card .imgbx img {
   max-width: 100%;
   border-radius: 4px;
 }
-.container .card .content {
+.about-container .card .content {
   position: relative;
   margin-top: -140px;
   padding: 10px 15px;
@@ -330,27 +330,27 @@ About card
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-.container .card:hover .content {
+.about-container .card:hover .content {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
-.container .card .content h2 {
+.about-container .card .content h2 {
   font-family: "Varela Round", sans-serif;
   font-size: 25px;
   color: rgb(105, 168, 2);
 }
-.container .card .content p {
+.about-container .card .content p {
   font-family: "Ubuntu", sans-serif;
   font-weight: bolder;
 }
 /* -----------------------------------------------------
 About-Us
 ----------------------------------------------------- */
-.about-us {
+/* .about-us {
   min-height: 100vh;
-}
+} */
 .about-us .about-main {
   text-align: center;
 }
@@ -366,6 +366,92 @@ About-Us
 .about-us p i {
   color: red;
   padding-left: 10px;
+}
+/* ---------------------------------------------------------
+Features
+--------------------------------------------------------- */
+.features {
+  margin-top: 50px;
+}
+.features .feature-title {
+  font-size: 70px;
+  font-family: "Itim", cursive;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.feature-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.feature-para {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+.col-text {
+  height: 20em;
+}
+.grid-flex {
+  padding: 0 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  /* -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around; */
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group: -1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 60%;
+}
+.col-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    order: vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+  }
 }
 
 /* -----------------------------------------------------
