@@ -430,30 +430,6 @@ Features
   background-position: center center;
 }
 
-@media (max-width: 640px) {
-  .grid-flex {
-    height: 40em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  .col {
-    order: vertical;
-  }
-  .col-left {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-  }
-  .col-text div p {
-    padding: 1em;
-  }
-  .Aligner-item {
-    width: 90%;
-  }
-}
-
 /* -----------------------------------------------------
 Reveal on scroll
 ----------------------------------------------------- */
@@ -542,10 +518,44 @@ Responsive
   .about-us p {
     font-size: 25px;
   }
+  .feature-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 640px) {
+  .grid-flex {
+    padding: 0 0;
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    order: vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    /* padding: 1em; */
+  }
+  .col-text {
+    align-items: initial;
+  }
+  .Aligner-item {
+    /* width: 90%; */
+    /* top: -100px; */
+  }
 }
 @media (max-width: 500px) {
   .about-us h1 {
     font-size: 50px;
+  }
+  .feature-title {
+    font-size: 60px;
   }
   .about-us p {
     font-size: 20px;
