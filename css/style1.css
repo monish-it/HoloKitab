@@ -242,6 +242,16 @@ Buy
   top: 0;
   left: 0;
 }
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 /* -----------------------------------------------------
 Responsive
