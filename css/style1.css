@@ -14,10 +14,9 @@ html {
   /* cursor: url("https://img.icons8.com/fluent/48/000000/cursor--v2.png"), auto; */
   cursor: url("../res/cursor/normal.png"), auto;
 }
-
-/* -------------------------------------------------------
-Cursor
-------------------------------------------------------- */
+a {
+  cursor: url("../res/cursor/normal.png"), auto;
+}
 
 /* -------------------------------------------------------
 Nav-Bar
@@ -347,6 +346,29 @@ About card
   font-weight: bolder;
 }
 /* -----------------------------------------------------
+About-Us
+----------------------------------------------------- */
+.about-us {
+  min-height: 100vh;
+}
+.about-us .about-main {
+  text-align: center;
+}
+.about-us h1 {
+  font-size: 70px;
+  font-family: "Itim", cursive;
+}
+.about-us p {
+  font-size: 30px;
+  font-family: "Asar", serif;
+  padding: 0px 5%;
+}
+.about-us p i {
+  color: red;
+  padding-left: 10px;
+}
+
+/* -----------------------------------------------------
 Reveal on scroll
 ----------------------------------------------------- */
 .reveal {
@@ -427,5 +449,19 @@ Responsive
   }
   .buynow .buy-card .buy-button p {
     font-size: 19px;
+  }
+  .about-us h1 {
+    font-size: 60px;
+  }
+  .about-us p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .about-us h1 {
+    font-size: 50px;
+  }
+  .about-us p {
+    font-size: 20px;
   }
 }
